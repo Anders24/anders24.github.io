@@ -125,8 +125,13 @@ body {
     float: right;
   }
 
+  img {
+  border: #020202 5px solid;
+  
+  }
+
   .one {
-    text-align: center;
+  text-align: center;
   }
 
   .two {
