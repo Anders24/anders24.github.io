@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stranda treningspark aparater</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Velkommen</a>
+        <div class="dropdown">
+          <button class="dropbtn">Aparater/Øvelser
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Benpress.html">Benpress</a>
+            <a class="active" href="SykkMaskin.html">Sykkelmaskin</a>
+            <a href="Vektløft.html">Dumbellkneløft</a>
+          </div>
+        </div>
+        <a href="Omparken.html">Om parken</a>
+        <a href="Linker.html">Linker</a>
+        <img src="Halden.png" alt="Halden kommune" class="split" height="50" width="200">
+    </div>
+    
+
+
+<h1>Sykkelmaskin</h1>
+
+<br>
+
+<p>Med sykkel Maskin trener du lår, legg og leggchin.</p>
+
+<div class="two">
+
+<img src="SykkMusk.jpg" alt="Sykkelmuskler" height="400" width="300">
+
+</div>
+
+<p>Du bruker en sykkelmaskin akkurat som du bruker en vanlig sykkel.</p>
+
+<div class="one">
+<img src="#" id="bilde" height="400" width="300">
+
+ <p><input type="radio" name="bildeliste" id="rbtnBilde1" value="Sykkelmaskin.jpg" />Bilde 1</p>
+ <p><input type="radio" name="bildeliste" id="rbtnBilde2" value="SykkelMaskin.gif" />Bilde 2</p>
+ 
+</div>
+
+<br>
+
+<br>
+
+</body>
+
+<script>
+
+window.onload = oppstart;
+
+
+    function oppstart() {
+        document.getElementById("rbtnBilde1").onclick = visBilde1;
+        document.getElementById("rbtnBilde2").onclick = visBilde2;
+       
+        
+        
+  
+        
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+        
+
+        document.getElementById("rbtnBilde1").checked = true;
+        
+
+    }
+
+    function visBilde1() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+    }
+
+    function visBilde2() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde2").value;
+    }
+
+  
+
+   
+    
+
+
+</script>

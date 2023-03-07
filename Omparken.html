@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stranda treningspark aparater</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Velkommen</a>
+        <div class="dropdown">
+          <button class="dropbtn">Aparater/Øvelser
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Benpress.html">Benpress</a>
+            <a href="SykkMaskin.html">Sykkelmaskin</a>
+            <a href="Vektløft.html">Dumbellkneløft</a>
+          </div>
+        </div>
+        <a class="active" href="Omparken.html">Om parken</a>
+        <a href="Linker.html">Linker</a>
+        <img src="Halden.png" alt="Halden kommune" class="split" height="50" width="200">
+
+    </div> 
+
+<h1 id="melding">Om Parken</h1>
+
+<ul>
+  <li id="gronn" class="gronn">Grønn</li>
+  <li id="blaa" class="blaa">Blå</li>
+  <li id="rod" class="rod">Rød</li>
+</ul>
+
+<p>Denne nye treningsparken ved tistastien ble åpnet 25. November 2022. <br> Parken er helt gratis og er åpen for alle som vil uansett hvilket nivå du er på.</p>
+
+<p>Parken er et samarbeids prosjekt mellom Halden kommune, Viken fylkeskomune og Norsk tipping. <br> Norsk tipping finansierte hele prosjektet som en del av å prøve å få et felles og gratis treningstilbud for alle i omrerådet.</p>
+
+<p>Parken er en del av utbyggelsen på Halden Videregående skole. <br> Parken er et derfor et fint tilbud for alle elever og ansatte på skolen også.</p>
+
+<br>
+<br>
+
+<p>Her er et kart for hvor parken ligger</p>
+
+<div class="one">
+
+<img src="Kart.png" alt="Kart til parken" height="400" width="600">
+
+</div>
+
+<br>
+<br>
+
+<script>
+
+window.onload = oppstart;
+
+function oppstart() {
+    document.getElementById("gronn").onclick = visGronn
+    document.getElementById("blaa").onclick = visBlaa
+    document.getElementById("rod").onclick = visRod
+}
+
+function visGronn() {
+   document.getElementById("melding").className ="gronn"
+}
+
+function visBlaa() {
+   document.getElementById("melding").className ="blaa"
+}
+
+function visRod() {
+   document.getElementById("melding").className ="rod"
+}
+
+</script>
+</body>
+      

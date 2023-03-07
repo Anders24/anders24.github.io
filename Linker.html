@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stranda treningspark aparater</title>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Velkommen</a>
+    <div class="dropdown">
+      <button class="dropbtn">Aparater/Øvelser
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Benpress.html">Benpress</a>
+        <a href="SykkMaskin.html">Sykkelmaskin</a>
+        <a href="Vektløft.html">Dumbellkneløft</a>
+      </div>
+    </div>
+    <a href="Omparken.html">Om parken</a>
+    <a class="active" href="Linker.html">Linker</a>
+    <img src="Halden.png" alt="Halden kommune" class="split" height="50" width="200">
+  </div>  
+
+    <h1>Linker for mer info</h1>
+    <br>
+
+    <p id="klikktekst">Liker du linker?</p>
+
+    <br>
+    
+    <h2>Halden Videregående Skole:</h2>
+
+    <div class="one">
+      <img src="Hvgs.png" alt="Halden vgs" height="150" width="430">
+    </div>
+
+    <br>
+
+    <div class="two">
+    <a href="https://viken.no/halden-vgs" target="_blank">Besøk Halden vgs!</a>
+    </div>
+  
+
+    <br>
+    <br>
+
+    <h2>Halden kommune:</h2>
+
+    <div class="one">
+    <img src="Halden.png" alt="halden kommune" height="200" width="300">
+    </div>
+
+    <div class="two">
+    <a href="https://www.halden.kommune.no/" target="_blank">Besøk Halden kommune!</a>
+    </div>
+
+    <br>
+    <br>
+    
+<script>
+  window.onload = oppstart;
+
+  function oppstart(){
+  document.getElementById("klikktekst").onclick = trykket;
+  }
+
+  function trykket(){
+  alert("Jeg også!");
+  }
+
+</script>
+
+</body>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stranda treningspark aparater</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Velkommen</a>
+        <div class="dropdown">
+          <button class="dropbtn">Aparater/Øvelser
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Benpress.html">Benpress</a>
+            <a href="SykkMaskin.html">Sykkelmaskin</a>
+            <a class="active" href="Vektløft.html">Dumbellkneløft</a>
+          </div>
+        </div>
+        <a href="Omparken.html">Om parken</a>
+        <a href="Linker.html">Linker</a>
+        <img src="Halden.png" alt="Halden kommune" class="split" height="50" width="200">
+    </div>
+    
+
+
+<h1>Dumbellkneløft</h1>
+
+<br>
+
+<p>Når du gjør knebøy med vekt trener du skuldrene, lårene og magen.</p>
+
+<div class="two">
+<img src="DumbellMusk.jpg" alt="Dumbellknebøy" height="400" width="300">
+</div>
+
+<p>Det er mange forskjellige øvelser du kan gjøre med dette aparatet,<br> men jeg har valgt å forklare en. <br> for å ta knebøy med vekt så er det så simpelt som<br> at du tar tak i vekten og begynner å ta knebøy med den </p>
+
+<div class="one">
+<img src="#" id="bilde" height="400" width="300">
+
+ <p><input type="radio" name="bildeliste" id="rbtnBilde1" value="DumbellKneløft.jpg" />Bilde 1</p>
+ <p><input type="radio" name="bildeliste" id="rbtnBilde2" value="VektLøft.gif" />Bilde 2</p>
+ 
+</div>
+
+<br>
+
+<br>
+
+</body>
+
+<script>
+
+window.onload = oppstart;
+
+
+    function oppstart() {
+        document.getElementById("rbtnBilde1").onclick = visBilde1;
+        document.getElementById("rbtnBilde2").onclick = visBilde2;
+       
+        
+        
+  
+        
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+        
+
+        document.getElementById("rbtnBilde1").checked = true;
+        
+
+    }
+
+    function visBilde1() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+    }
+
+    function visBilde2() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde2").value;
+    }
+
+  
+
+   
+    
+
+
+</script>
